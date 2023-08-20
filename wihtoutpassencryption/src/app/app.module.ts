@@ -20,6 +20,8 @@ import { SkillListComponent } from './skill-list/skill-list.component';
 import { DeleteSkillComponent } from './deleteskill/deleteskill.component';
 import { AssociateLoginComponent } from './associate-login/associate-login.component';
 import { MainLoginComponent } from './main-login/main-login.component';
+import { AssociateSkillsComponent } from './associate-skills/associate-skills.component';
+import { AssociateSkillsListComponent } from './associate-skills-list/associate-skills-list.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { MainLoginComponent } from './main-login/main-login.component';
     SkillListComponent,
     DeleteSkillComponent,
     AssociateLoginComponent,
-    MainLoginComponent
+    MainLoginComponent,
+    AssociateSkillsComponent,
+    AssociateSkillsListComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +65,9 @@ import { MainLoginComponent } from './main-login/main-login.component';
       {path: 'listskill', component: SkillListComponent},
       {path: 'deleteskill', component: DeleteSkillComponent},
       {path: 'associatelogin', component: AssociateLoginComponent},
-      {path: 'mainlogin', component: MainLoginComponent}
+      {path: 'mainlogin', component: MainLoginComponent},
+      {path: 'associateskills', component: AssociateSkillsComponent},
+      {path: 'associateskillslist', component: AssociateSkillsListComponent}
     ])
   ],
   providers: [],

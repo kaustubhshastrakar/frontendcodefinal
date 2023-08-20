@@ -15,6 +15,7 @@ import { SkillListComponent } from './skill-list/skill-list.component';
 import { DeleteSkillComponent } from './deleteskill/deleteskill.component';
 import { AssociateLoginComponent } from './associate-login/associate-login.component';
 import { MainLoginComponent } from './main-login/main-login.component';
+import { AssociateSkillsComponent } from './associate-skills/associate-skills.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/associates', pathMatch: 'full' },
@@ -33,7 +34,8 @@ const routes: Routes = [
   { path: 'listskill', component: SkillListComponent},
   { path: 'deleteskill', component: DeleteSkillComponent},
   { path: 'associatelogin', component: AssociateLoginComponent},
-  { path: 'mainlogin', component: MainLoginComponent}
+  { path: 'mainlogin', component: MainLoginComponent},
+  { path: 'associateskills', component: AssociateSkillsComponent}
 ];
 
 @NgModule({
