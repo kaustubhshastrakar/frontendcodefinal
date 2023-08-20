@@ -1,0 +1,14 @@
+<h2>Create New Skill</h2>
+<form [formGroup]="skillForm" (ngSubmit)="createSkill()">
+  <div>
+    <label for="skillName">Skill Name:</label>
+    <input type="text" id="skillName" formControlName="skillName">
+  </div>
+  <div>
+    <label for="skillCategory">Skill Category:</label>
+    <input type="text" id="skillCategory" formControlName="skillCategory">
+  </div>
+  <div>
+    <button type="submit" [disabled]="!skillForm.valid">Create Skill</button>
+  </div>
+</form>

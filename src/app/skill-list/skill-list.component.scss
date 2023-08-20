@@ -1,0 +1,46 @@
+/* skill-list.component.scss */
+
+.skill-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-heading {
+    display: grid;
+    grid-template-columns: 80px 1fr 2fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+  }
+  
+  .skill-id,
+  .skill-name-heading,
+  .skill-category-heading {
+    padding: 0 8px;
+  }
+  
+  .skill-item {
+    display: grid;
+    grid-template-columns: 80px 1fr 2fr;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  
+    .skill-id,
+    .skill-name,
+    .skill-category {
+      padding: 0 8px;
+    }
+  }
+  

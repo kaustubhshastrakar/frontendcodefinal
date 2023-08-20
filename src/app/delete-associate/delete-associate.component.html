@@ -1,0 +1,9 @@
+<!-- delete-associate.component.html -->
+
+<h2>Delete Associate</h2>
+
+<form (ngSubmit)="deleteAssociate()">
+  <label for="associateId">Associate ID:</label>
+  <input type="number" id="associateId" name="associateId" [(ngModel)]="associateId" required>
+  <button type="submit">Delete</button>
+</form>

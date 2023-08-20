@@ -1,0 +1,6 @@
+<h2>HR List</h2>
+<ul>
+  <li *ngFor="let hr of hrList" (click)="navigateToDetails(hr.id)">
+    ID:{{hr.id}} |  Email:{{ hr.userEmail }}
+  </li>
+</ul>

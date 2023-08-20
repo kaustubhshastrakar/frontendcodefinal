@@ -1,0 +1,18 @@
+<div class="skill-list-container">
+    <h2>All Skills</h2>
+    <ul class="skill-list">
+      <li class="skill-heading">
+        <div class="skill-id"> ID</div>
+        <div class="skill-name-heading">Skill Name</div>
+        <div class="skill-category-heading">Skill Category</div>
+      </li>
+      <li class="skill-item" *ngFor="let skill of skills">
+        <div class="skill-id">{{skill.skillId}}</div>
+        <div class="skill-name">{{ skill.skillName }}</div>
+        <div class="skill-category">{{ skill.skillCategory }}</div>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
