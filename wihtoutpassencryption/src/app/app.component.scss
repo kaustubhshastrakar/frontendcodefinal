@@ -1,0 +1,32 @@
+/* styles.scss */
+
+// Global styles
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+// Header styles
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0; /* Adjust the padding as needed */
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+}
+
+// Router outlet styles
+router-outlet {
+  display: block;
+  margin: 20px;
+  padding-top: 80px; /* Add padding to the router-outlet to avoid content being hidden under the fixed header */
+}

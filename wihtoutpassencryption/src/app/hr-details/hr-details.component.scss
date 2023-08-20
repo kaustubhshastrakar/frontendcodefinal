@@ -1,0 +1,28 @@
+/* Add styles for HR Details component here */
+
+div {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+  }
+  
+  button {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+  
