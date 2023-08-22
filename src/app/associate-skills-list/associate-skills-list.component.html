@@ -1,0 +1,30 @@
+<div *ngIf="associateSkills">
+    <h2>Associate Skills List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Associate ID</th>
+          <th>Skill ID</th>
+          <th>Certification</th>
+          <th>Duration</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Experience</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let skill of associateSkills">
+          <td>{{ skill.aid.associateId }}</td>
+          <td>{{ skill.sid.skillId }}</td>
+          <td>{{ skill.certification }}</td>
+          <td>{{ skill.duration }}</td>
+          <td>{{ skill.startDate }}</td>
+          <td>{{ skill.endDate }}</td>
+          <td>{{ skill.experience }}</td>
+          <td>{{ skill.rating }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

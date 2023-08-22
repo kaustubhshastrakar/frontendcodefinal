@@ -50,5 +50,27 @@ export class SkillsService {
   deleteSkillById(skillId: number): Observable<any> {
     return this.http.delete(`${this.apiUrl}/deleteSkill/${skillId}`);
   }
+
   // Add more methods as needed for other microservice API functions
+
+  saveAssociateSkill(associateId: number, skillId: number, data: any) {
+    const url = `${this.apiUrl}/saveAssociateSkill/${associateId}/${skillId}`;
+    return this.http.post(url, null); // Use null as the request body, as the endpoint may not require it
+  }
+
+  getAssociates(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/associates`);
+  }
+
+  getSkills(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/skills`);
+  }
+
+  getAllAssociateSkills(): Observable<any[]> {
+    const url = `${this.apiUrl}/associateSkills/all`;
+    return this.http.get<any[]>(url);
+
+  }
+
+
 }

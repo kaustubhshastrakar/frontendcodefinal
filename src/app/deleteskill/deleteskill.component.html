@@ -1,9 +1,13 @@
 <div class="delete-skill-container">
-    <h2>Delete Skill</h2>
-    <div>
-      <label for="skillId">Skill ID:</label>
-      <input type="number" id="skillId" [(ngModel)]="skillId">
-    </div>
-    <button (click)="deleteSkill()">Delete Skill</button>
+  <h2>Delete Skill</h2>
+  <div>
+    <label for="skillId">Skill ID:</label>
+    <input type="number" id="skillId" [(ngModel)]="skillId">
   </div>
+  <button (click)="deleteSkill()">Delete Skill</button>
   
+  <!-- Display a success message when the skill is deleted successfully -->
+  <div *ngIf="deletionSuccess" class="success-message">
+    Deletion successful!
+  </div>
+</div>

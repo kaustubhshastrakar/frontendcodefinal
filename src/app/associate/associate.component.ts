@@ -20,12 +20,13 @@ export class AssociateComponent implements OnInit {
       dob: ['', Validators.required],
       gender: ['', Validators.required],
       location: ['', Validators.required],
-      country: ['', Validators.required]
+      country: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
   ngOnInit(): void {
-    // Initialize component
+    
   }
 
   onSaveAssociate() {
@@ -34,7 +35,7 @@ export class AssociateComponent implements OnInit {
       this.associateService.saveAssociate(associateData).subscribe(
         response => {
           console.log('Associate saved successfully', response);
-          // Reset form or navigate to another page
+          
         },
         error => {
           console.error('Error saving associate', error);

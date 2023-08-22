@@ -8,6 +8,7 @@ import { SkillsService } from '../skills.service';
 })
 export class DeleteSkillComponent implements OnInit {
   skillId!: number;
+  deletionSuccess = false; // Add a property to track deletion success
 
   constructor(private skillsService: SkillsService) { }
 
@@ -23,9 +24,12 @@ export class DeleteSkillComponent implements OnInit {
     this.skillsService.deleteSkillById(this.skillId).subscribe(
       () => {
         console.log('Skill deleted successfully');
-        // Add any additional logic or notifications here
+        // Set deletionSuccess to true to display the success message
+        this.deletionSuccess = true;
+        
+        // You can add any additional logic or notifications here
       },
-      (      error: any) => {
+      (error: any) => {
         console.error('Error deleting skill:', error);
         // Handle error and show error message if needed
       }

@@ -26,5 +26,19 @@ export class AssociateService {
   deleteAssociate(id: number): Observable<void> {
     const url = `${this.baseUrl}/deleteAssociate/${id}`;
     return this.http.delete<void>(url);
+    }
+
+
+    getAssociateById(associateId: number): Observable<any> {
+      const url = `${this.baseUrl}/associateId/${associateId}`;
+      return this.http.get(url);
+    }
+
+getAssociatesByLastName(lastName: string): Observable<any[]> {
+    const url = `${this.baseUrl}/AssociateLastName/${lastName}`;
+    return this.http.get<any[]>(url);
   }
+
+
+  
 }

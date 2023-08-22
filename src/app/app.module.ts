@@ -18,6 +18,12 @@ import { SkillmainpageComponent } from './skillmainpage/skillmainpage.component'
 import { CreateSkillComponent } from './create-skill/create-skill.component';
 import { SkillListComponent } from './skill-list/skill-list.component';
 import { DeleteSkillComponent } from './deleteskill/deleteskill.component';
+import { AssociateLoginComponent } from './associate-login/associate-login.component';
+import { MainLoginComponent } from './main-login/main-login.component';
+import { AssociateSkillsComponent } from './associate-skills/associate-skills.component';
+import { AssociateSkillsListComponent } from './associate-skills-list/associate-skills-list.component';
+import { AssociateDetailsComponent } from './associate-details/associate-details.component';
+import { AssociateloginsuccessComponent } from './associateloginsuccess/associateloginsuccess.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +40,13 @@ import { DeleteSkillComponent } from './deleteskill/deleteskill.component';
     SkillmainpageComponent,
     CreateSkillComponent,
     SkillListComponent,
-    DeleteSkillComponent
+    DeleteSkillComponent,
+    AssociateLoginComponent,
+    MainLoginComponent,
+    AssociateSkillsComponent,
+    AssociateSkillsListComponent,
+    AssociateDetailsComponent,
+    AssociateloginsuccessComponent
   ],
   imports: [
     BrowserModule,
@@ -42,10 +54,10 @@ import { DeleteSkillComponent } from './deleteskill/deleteskill.component';
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: 'login', pathMatch: 'full' },
-      { path: 'hr-list', component: HrListComponent },
-      { path: 'hr-details/:id', component: HrDetailsComponent },
-      { path: 'hr-form', component: HrFormComponent },
+      {path: '', redirectTo: 'mainlogin', pathMatch: 'full' },
+      {path: 'hr-list', component: HrListComponent },
+      {path: 'hr-details/:id', component: HrDetailsComponent },
+      {path: 'hr-form', component: HrFormComponent },
       {path: 'login', component: LoginComponent},
       {path: 'associate', component: AssociateComponent},
       {path: 'associates', component: AssociateListComponent},
@@ -55,7 +67,13 @@ import { DeleteSkillComponent } from './deleteskill/deleteskill.component';
       {path: 'skillmain', component: SkillmainpageComponent},
       {path: 'createskill', component: CreateSkillComponent},
       {path: 'listskill', component: SkillListComponent},
-      {path: 'deleteskill', component: DeleteSkillComponent}
+      {path: 'deleteskill', component: DeleteSkillComponent},
+      {path: 'associatelogin', component: AssociateLoginComponent},
+      {path: 'mainlogin', component: MainLoginComponent},
+      {path: 'associateskills', component: AssociateSkillsComponent},
+      {path: 'associateskillslist', component: AssociateSkillsListComponent},
+      {path: 'associatedetails', component: AssociateDetailsComponent},
+      {path: 'associateloginsuccess', component: AssociateloginsuccessComponent}
     ])
   ],
   providers: [],
